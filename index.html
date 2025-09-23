@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Page</title>
+  <title>Simple Login Form</title>
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
-    <p>This is a basic paragraph within the body of the HTML document.</p>
+  <h2>Login</h2>
+  <form action="/login" method="post">
+    <label for="username">Username:</label><br/>
+    <input type="text" id="username" name="username" required><br/><br/>
+    
+    <label for="password">Password:</label><br/>
+    <input type="password" id="password" name="password" required><br/><br/>
+    
+    <button type="submit">Login</button>
+  </form>
 </body>
 </html>
